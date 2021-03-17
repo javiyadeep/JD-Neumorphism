@@ -444,6 +444,19 @@ header .navbar-toggler {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Count Start -- */
 .count .container .part1 {
     margin: 0px 0 20px 0;
 }
@@ -481,6 +494,7 @@ header .navbar-toggler {
     font-weight: 400;
 }
 
+/* -- Count End -- */
 
 
 
@@ -490,6 +504,11 @@ header .navbar-toggler {
 
 
 
+
+
+
+
+/* -- Team Start -- */
 .team {
     margin: 100px 0 80px 0;
 }
@@ -568,6 +587,174 @@ header .navbar-toggler {
     font-size: 20px;
 }
 
+/* -- Team End -- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Contact Details Start -- */
+.contact {
+    margin: 150px 0;
+}
+
+.contact .container {
+    padding: 50px;
+    height: 1050px;
+    border-radius: 8px;
+    border: var(--border);
+    box-shadow: var(--upbox);
+    display: grid;
+    place-items: center;
+}
+
+.contact .container .map iframe {
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    border: var(--border);
+    box-shadow: var(--inbox);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.contact .container h1 {
+    color: var(--textcolor);
+    margin: 50px 0;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--nunito);
+    font-weight: 600;
+}
+
+.contact .container p {
+    color: var(--textcolor);
+    padding: 0 30px;
+    text-align: center;
+    font-size: 22px;
+    font-family: var(--nunito);
+    font-weight: 400;
+}
+
+.contact .container .row .buttons {
+    text-align: center;
+}
+
+.contact .container .row .buttons i {
+    margin: 60px 0 20px 0;
+    color: var(--h1color);
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 40px;
+    box-shadow: var(--upbox);
+}
+
+.contact .container .row .buttons h3 {
+    color: var(--textcolor);
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--nunito);
+    font-weight: 600;
+}
+
+.contact .container .row .buttons p {
+    text-align: center;
+    margin: 15px 0;
+    color: var(--textcolor);
+    font-size: 18px;
+    font-family: var(--nunito);
+    font-weight: 300;
+    line-height: 20px;
+}
+
+/* -- Contact Details End -- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Girl Start -- */
+    /* .girl {
+        margin: 0 0 50px 0;
+    }
+
+    .girl .container {
+        height: 300px;
+        padding:0 50px;
+        border-radius: 8px;
+        border: var(--border);
+        box-shadow: var(--upbox);
+    }
+
+    .girl .container .row {
+        display: flex;
+        align-items: center;
+    }
+
+    .girl .container .part1 h2 {
+        font-size: 40px;
+        font-family: var(--nunito);
+        font-weight: 600;
+        color: var(--textcolor);
+        margin: 10px 0;
+    }
+
+    .girl .container .part1 p {
+        margin: 5px 0;
+        color: var(--textcolor);
+        font-size: 20px;
+        font-family: var(--nunito);
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .girl .container .part1 a{
+
+        padding: 15px 20px;
+        border-radius: 8px;
+        border: var(--border);
+        box-shadow: var(--upbox);
+    }
+
+    .girl .container .part1 a i{
+        margin: 30px 0;
+    }
+
+    .girl .container .part2 {
+        height: 300px;
+        display: grid;
+        place-items: center;
+    }
+
+    .girl .container .part2 img {
+        width: auto;
+        height: 250px;
+    } */
+
+/* -- Girl End -- */
+
 
 
 
@@ -606,6 +793,27 @@ header .navbar-toggler {
     .about .container .row .part2 {
         text-align: center;
     }
+
+    .team .container-card {
+        height: 1140px;
+    }
+
+    .contact .container {
+        height: 1550px;
+    }
+
+    .girl .container {
+        height: 550px;
+        display: grid;
+        place-items: center;
+    }
+}
+
+
+@media (max-width: 518px) {
+    .contact .container {
+        height: 1610px;
+    }
 }
 
 
@@ -619,6 +827,13 @@ header .navbar-toggler {
 @media (max-width: 390px) {
     .hero {
         height: 800px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .contact .container {
+        height: 1705px;
     }
 }
 
