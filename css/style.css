@@ -190,6 +190,7 @@ header {
     height: 80px;
     background-color: var(--backcolor);
     z-index: 99999999;
+    box-shadow: 0 0 18px #00000030;
 }
 header .navbar {
     height: 80px;
