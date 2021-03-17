@@ -143,6 +143,7 @@ table {
     --upbox: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
     --border: 1px solid #d1d9e6;
     --textcolor: #44476a;
+    --h1color: #313448;
     --nunito: 'Nunito Sans', sans-serif;
     --robot: 'Roboto', sans-serif;
     --opensans: 'Open Sans', sans-serif;
@@ -150,15 +151,48 @@ table {
     --raleway: 'Raleway', sans-serif;
     --montserrat: 'Montserrat', sans-serif;
 }
+
 /* -- Root End -- */
 
 
+
+
+
+
+/* -- Global Start -- */
 body {
     background-color: var(--backcolor);
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;    
+}
+/* -- Global End -- */
+
+
+
+
+
+
+
+
+/* -- Navbar Start -- */
+header {
+    height: 80px;
+    background-color: var(--backcolor);
+    z-index: 99999999;
+}
 header .navbar {
+    height: 80px;
 }
 
 header .navbar .navbar-brand {
@@ -169,9 +203,9 @@ header .navbar .navbar-brand {
     text-transform: uppercase;
     font-family: var(--nunito);
     border-radius: 8px;
-    border:1px solid #d1d9e6;
+    border: 1px solid #d1d9e6;
     box-shadow: var(--upbox);
-    
+
 }
 
 header .navbar .navbar-brand:hover {
@@ -209,9 +243,70 @@ header .navbar-toggler {
     box-shadow: var(--upbox);
 }
 
+/* -- Navbar End -- */
 
 
 
 
 
 
+
+/* -- Hero Start -- */
+.hero {
+    width: 100%;
+    padding: 150px 0 100px 0 ;
+    height: 600px;
+    display: grid;
+    place-items: center;
+    /* background-color: #f00; */
+}
+
+.hero h1 {
+    color: #313448;
+    font-family: var(--raleway);
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin: 25px 0;
+}
+
+.hero .lorem {
+    margin: 25px 0;
+}
+
+.hero p {
+    padding: 0 100px;
+    color: var(--textcolor);
+    font-family: var(--robot);
+    line-height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero ul li {
+    display: flex;
+    justify-content: center;
+}
+
+.hero ul li a {
+    color: var(--textcolor);
+    border-radius: 8px;
+    border: var(--border);
+    margin: 10px 0;
+    padding: 15px 20px;
+    box-shadow: var(--upbox);
+    font-family: var(--poppins);
+    font-weight: bold;
+}
+
+.hero ul li a:hover {
+    box-shadow: var(--inbox);
+    border: var(--border);
+    border-radius: 8px;
+    color: var(--textcolor);
+}
+
+.hero ul li i {
+    padding: 0 10px 0 0;
+}
+/* -- Hero End -- */
