@@ -174,8 +174,14 @@ li {
 }
 
 a {
-    text-decoration: none;    
+    text-decoration: none;
 }
+
+.card {
+    background-color: var(--backcolor);
+    border: none;
+}
+
 /* -- Global End -- */
 
 
@@ -192,6 +198,7 @@ header {
     z-index: 99999999;
     box-shadow: 0 0 18px #00000030;
 }
+
 header .navbar {
     height: 80px;
 }
@@ -255,7 +262,7 @@ header .navbar-toggler {
 /* -- Hero Start -- */
 .hero {
     width: 100%;
-    padding: 150px 0 100px 0 ;
+    padding: 150px 0 100px 0;
     height: 600px;
     display: grid;
     place-items: center;
@@ -310,4 +317,118 @@ header .navbar-toggler {
 .hero ul li i {
     padding: 0 10px 0 0;
 }
+
 /* -- Hero End -- */
+
+
+
+
+
+
+
+
+
+
+/* -- Products Start -- */
+.product {
+    height: 400px;
+    margin: 0 0 50px 0;
+    /* background-color: red; */
+}
+
+.product .container {
+    height: 400px;
+    border-radius: 8px;
+    border: var(--border);
+    box-shadow: var(--upbox);
+    display: grid;
+    place-items: center;
+}
+
+.product .container .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product .container .card a {
+    text-align: center;
+}
+
+.product .container .card a i {
+    margin: 25px 0;
+    font-size: 40px;
+    box-shadow: var(--inbox);
+    padding: 25px;
+    border-radius: 50%;
+    color: #313448;
+    /* border:2px solid red; */
+}
+
+.product .container .card h2 {
+    color: var(--textcolor);
+    margin: 5px 0;
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.product .container .card p {
+    color: #44476a8c;
+    margin: 10px 0;
+    line-height: 20px;
+    font-family: var(--robot);
+    font-weight: 400;
+    text-align: center;
+}
+
+/* -- Products End -- */
+
+
+
+
+
+
+
+
+
+/* -- Media Query Start -- */
+@media (max-width: 991px) {
+    header .navbar .navbar-brand {
+        font-size: 18px;
+    }
+
+    .product {
+        height: 750px;
+    }
+
+    .product .container {
+        height: 750px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero {
+        height: 700px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .hero {
+        height: 800px;
+    }
+}
+
+
+@media (max-width: 384px) {
+    .product {
+        height: 800px;
+    }
+    
+    .product .container {
+        height: 800px;
+    }
+}
+/* -- Media Query End -- */
