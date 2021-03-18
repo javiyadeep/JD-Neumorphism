@@ -345,7 +345,7 @@ header .navbar-toggler {
     /* background-color: #f00; */
 }
 
-.hero h1 {
+.hero h2 {
     color: var(--textcolor);
     font-family: var(--raleway);
     font-size: 50px;
@@ -706,7 +706,7 @@ header .navbar-toggler {
     filter: grayscale(100%);
 }
 
-.contact .container h1 {
+.contact .container h2 {
     color: var(--textcolor);
     margin: 50px 0;
     text-align: center;
