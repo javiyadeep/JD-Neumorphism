@@ -201,6 +201,7 @@ header {
 
 header .navbar {
     height: 80px;
+    color: var(--textcolor);
 }
 
 header .navbar .navbar-brand {
@@ -270,7 +271,7 @@ header .navbar-toggler {
 }
 
 .hero h1 {
-    color: #313448;
+    color: var(--textcolor);
     font-family: var(--raleway);
     font-size: 50px;
     text-align: center;
@@ -360,8 +361,7 @@ header .navbar-toggler {
     box-shadow: var(--inbox);
     padding: 25px;
     border-radius: 50%;
-    color: #313448;
-    /* border:2px solid red; */
+    color: var(--textcolor);
 }
 
 .product .container .card h2 {
@@ -374,7 +374,7 @@ header .navbar-toggler {
 }
 
 .product .container .card p {
-    color: #44476a8c;
+    color: var(--textcolor);
     margin: 10px 0;
     line-height: 20px;
     font-family: var(--robot);
@@ -419,13 +419,14 @@ header .navbar-toggler {
 }
 
 .about .row .h2 {
-    color: var(--h1color);
+    color: var(--textcolor);
     font-size: 40px;
     font-family: var(--nunito);
     margin: 20px 0px;
 }
 
 .about .row p {
+    color: var(--textcolor);
     text-align: justify;
     margin: 25px 0;
     line-height: 30px;
@@ -553,7 +554,7 @@ header .navbar-toggler {
     border-radius: 50%;
     padding: 15px;
     border: var(--border);
-    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff
+    box-shadow: var(--inbox);
 }
 
 .team .container-card .card h4 {
@@ -661,6 +662,11 @@ header .navbar-toggler {
     box-shadow: var(--upbox);
 }
 
+.contact .container .row .buttons i:hover {
+    box-shadow: var(--inbox);
+}
+
+
 .contact .container .row .buttons h3 {
     color: var(--textcolor);
     text-align: center;
@@ -695,71 +701,69 @@ header .navbar-toggler {
 
 
 
-/* -- Girl Start -- */
-    /* .girl {
-        margin: 0 0 50px 0;
-    }
 
-    .girl .container {
-        height: 300px;
-        padding:0 50px;
-        border-radius: 8px;
-        border: var(--border);
-        box-shadow: var(--upbox);
-    }
+/* -- App Start -- */
+.app {
+    margin: 0 0 100px 0;
+}
 
-    .girl .container .row {
-        display: flex;
-        align-items: center;
-    }
+.app .container {
+    height: 350px;
+    border-radius: 8px;
+    border: var(--border);
+    box-shadow: var(--inbox);
+    display: grid;
+    place-items: center;
+}
 
-    .girl .container .part1 h2 {
-        font-size: 40px;
-        font-family: var(--nunito);
-        font-weight: 600;
-        color: var(--textcolor);
-        margin: 10px 0;
-    }
+.app .container .h2-text h2 {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 38px;
+    font-family: var(--nunito);
+    color: var(--textcolor);
+}
 
-    .girl .container .part1 p {
-        margin: 5px 0;
-        color: var(--textcolor);
-        font-size: 20px;
-        font-family: var(--nunito);
-        font-weight: 400;
-        line-height: 25px;
-    }
+.app .container .h2-text p {
+    margin: 10px 0;
+    text-align: center;
+    line-height: 25px;
+    font-size: 22px;
+    font-family: var(--nunito);
+    color: var(--textcolor);
+}
 
-    .girl .container .part1 a{
+.app .container .h2-text .button {
+    text-align: center;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
 
-        padding: 15px 20px;
-        border-radius: 8px;
-        border: var(--border);
-        box-shadow: var(--upbox);
-    }
+.app .container .h2-text .button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    color: var(--textcolor);
+    border-radius: 8px;
+    border: var(--border);
+    box-shadow: var(--upbox);
+}
 
-    .girl .container .part1 a i{
-        margin: 30px 0;
-    }
+.app .container .h2-text .button a:hover {
+    box-shadow: var(--inbox);
+}
 
-    .girl .container .part2 {
-        height: 300px;
-        display: grid;
-        place-items: center;
-    }
-
-    .girl .container .part2 img {
-        width: auto;
-        height: 250px;
-    } */
-
-/* -- Girl End -- */
-
-
-
-
-
-
+.app .container .h2-text .button a span {
+    padding: 0 15px;
+    font-size: 20px;    
+    font-family: var(--nunito);
+}
+/* -- App End -- */
 
 
 
@@ -801,11 +805,12 @@ header .navbar-toggler {
     .contact .container {
         height: 1550px;
     }
+}
 
-    .girl .container {
-        height: 550px;
-        display: grid;
-        place-items: center;
+
+@media (max-width: 526px) {
+    .app .container {
+        height: 385px;
     }
 }
 
@@ -824,8 +829,33 @@ header .navbar-toggler {
 }
 
 
+@media (max-width: 473px) {
+    .app .container {
+        height: 420px;
+    }
+}
+
+
 @media (max-width: 390px) {
     .hero {
+        height: 800px;
+    }
+}
+
+
+@media (max-width: 389px) {
+    .app .container {
+        height: 450px;
+    }
+}
+
+
+@media (max-width: 384px) {
+    .product {
+        height: 800px;
+    }
+
+    .product .container {
         height: 800px;
     }
 }
@@ -838,13 +868,9 @@ header .navbar-toggler {
 }
 
 
-@media (max-width: 384px) {
-    .product {
-        height: 800px;
-    }
-
-    .product .container {
-        height: 800px;
+@media (max-width: 300px) {
+    .app .container {
+        height: 485px;
     }
 }
 
