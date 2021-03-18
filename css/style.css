@@ -160,6 +160,10 @@ table {
 
 
 /* -- Global Start -- */
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--backcolor);
     box-sizing: border-box;
