@@ -63,7 +63,7 @@
 
 
     <!-- Navbar Start -->
-    <header class="fixed-top">
+    <header id="navbar">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -396,32 +396,34 @@
         </div>
     </section>
     <!-- Contact Details End -->
-    
-    
-    
-
-    
-    
 
 
 
 
 
 
-    
 
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
     <!-- App Start -->
     <section class="app">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 h2-text">
                     <h2>Ready to change your life?</h2>
-                    <p>Download Rocket today and take the first step to organize your routine, <br> achieve your personal goals and reflect on your life.</p>
+                    <p>Download Rocket today and take the first step to organize your routine, <br> achieve your
+                        personal goals and reflect on your life.</p>
                     <div class="button">
-                        <a href="#"><i class="fa fa-apple" aria-hidden="true"></i> <span>Available On App Store</span></a>
+                        <a href="#"><i class="fa fa-apple" aria-hidden="true"></i> <span>Available On App
+                                Store</span></a>
                     </div>
                 </div>
             </div>
@@ -432,20 +434,88 @@
 
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 part1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ipsam praesentium cumque
+                        blanditiis magni repellendus, autem optio dicta architecto! Reprehenderit.</p>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100010857815355" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"
+                                    style="color: #3b5998;"></i></a></li>
+                        <li><a href="https://twitter.com/AleisPatel" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"
+                                    style="color: #00acee;"></i></a></li>
+                        <li><a href="https://www.instagram.com/patel_aleis/" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="color: #dd2a7b;"></i></a>
+                        </li>
+                        <li><a href="https://github.com/javiyadeep" target="_blank"><i class="fa fa-github" aria-hidden="true" style="color: #4078c0;"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 part2">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Our Team</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 part3">
+                    <h4>Subscribe</h4>
+                    <p>Join our mailing list. We write rarely, but only the best content.</p>
+                    <form>
+                        <input type="email" required placeholder="example@company.com">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Navbar Script Start -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-350px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <!-- Navbar Script End -->
+
+
+
+
 
 
 

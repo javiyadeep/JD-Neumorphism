@@ -193,6 +193,11 @@ a {
 
 /* -- Navbar Start -- */
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 1s;
     height: 80px;
     background-color: var(--backcolor);
     z-index: 99999999;
@@ -760,10 +765,138 @@ header .navbar-toggler {
 
 .app .container .h2-text .button a span {
     padding: 0 15px;
-    font-size: 20px;    
+    font-size: 20px;
     font-family: var(--nunito);
 }
+
 /* -- App End -- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Footer Start -- */
+footer {
+    height: 400px;
+    box-shadow: var(--upbox);
+    padding: 50px;
+}
+
+footer .container {
+    height: 300px;
+}
+
+footer .container .part1 p {
+    font-size: 18px;
+    text-align: justify;
+    font-family: var(--nunito);
+    line-height: 22px;
+    color: var(--textcolor);
+    font-weight: 300;
+}
+
+footer .container .part1 ul {
+    text-align: center;
+}
+
+footer .container .part1 ul li {
+    margin: 20px 5px;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    border: var(--border);
+    box-shadow: var(--upbox);
+}
+
+footer .container .part1 ul li a {
+    font-size: 25px;
+    box-shadow: var(--upbox);
+    border-radius: 50%;
+}
+
+footer .container .part2 ul li {
+    text-align: center;
+    margin: 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+
+footer .container .part2 ul li:hover {
+    padding: 10px;
+    box-shadow: var(--inbox);
+    border-radius: 8px;
+    border: var(--border);
+}
+
+footer .container .part2 ul li a {
+    color: var(--textcolor);
+    font-family: var(--nunito);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+footer .container .part2 ul li:hover a {
+    font-weight: bold;
+}
+
+footer .container .part3 h4 {
+    font-size: 25px;
+    font-family: var(--nunito);
+    font-weight: bold;
+    color: var(--textcolor);
+}
+
+footer .container .part3 p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: var(--nunito);
+    font-weight: 500;
+    color: var(--textcolor);
+}
+
+footer .container .part3 form input {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--backcolor);
+    box-shadow: var(--inbox);
+    border: var(--border);
+    color: var(--textcolor);
+    font-family: var(--nunito);
+    border-radius: 8px;
+}
+
+footer .container .part3 form button {
+    background-color: var(--backcolor);
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-shadow: var(--upbox);
+    border: var(--border);
+    border-radius: 8px;
+    color: var(--textcolor);
+    font-family: var(--nunito);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer .container .part3 form button:hover {
+    box-shadow: var(--inbox);
+}
+/* -- Footer End -- */
+
+
+
+
+
 
 
 
@@ -805,6 +938,37 @@ header .navbar-toggler {
     .contact .container {
         height: 1550px;
     }
+
+    footer {
+        height: 510px;
+    }
+    
+    footer .container .part1 p {
+        text-align: center;
+    }
+
+    footer .container .part3 {
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 767px) {
+    footer {
+        height: 667px;
+    }
+    
+    footer .container .part2 {
+        margin: 30px 0 0 0;
+    }
+}
+
+
+@media (max-width: 568px) {
+    footer {
+        height: 700px;
+    }
 }
 
 
@@ -836,9 +1000,20 @@ header .navbar-toggler {
 }
 
 
+@media (max-width: 468px) {
+    footer {
+        height: 730px;
+    }
+}
+
+
 @media (max-width: 390px) {
     .hero {
         height: 800px;
+    }
+
+    footer {
+        height: 840px;
     }
 }
 
@@ -864,6 +1039,13 @@ header .navbar-toggler {
 @media (max-width: 370px) {
     .contact .container {
         height: 1705px;
+    }
+}
+
+
+@media (max-width: 361px) {
+    footer {
+        height: 870px;
     }
 }
 
