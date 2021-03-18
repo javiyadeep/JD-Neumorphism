@@ -277,6 +277,7 @@ header {
 header .navbar {
     height: 80px;
     color: var(--textcolor);
+    position: relative;
 }
 
 header .navbar .navbar-brand {
@@ -934,6 +935,7 @@ footer .container .part3 p {
 }
 
 footer .container .part3 form input {
+    overflow: hidden;
     width: 100%;
     padding: 10px;
     background-color: var(--backcolor);
@@ -942,6 +944,10 @@ footer .container .part3 form input {
     color: var(--textcolor);
     font-family: var(--nunito);
     border-radius: 8px;
+}
+
+footer .container .part3 form input {
+
 }
 
 footer .container .part3 form button {
@@ -981,6 +987,12 @@ footer .container .part3 form button:hover {
 
     header .navbar .navbar-collapse {
         box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+    }
+
+    header .navbar .collapse {
     }
 
     .product {
