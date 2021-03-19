@@ -171,7 +171,7 @@ table {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, var(--textcolor),  100%, rgba(7, 16, 50, 1) 0%);
+    background: linear-gradient(to bottom, var(--textcolor), 100%, rgba(7, 16, 50, 1) 0%);
     border: 2px solid var(--backcolor);
     border-radius: 30px;
 }
@@ -202,6 +202,18 @@ a {
 /* -- Global End -- */
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* -- Prelorder Start -- */
 .main-div {
     width: 100vw;
     height: 100vh;
@@ -237,7 +249,7 @@ a {
     0% {
         transform: rotate(0deg);
     }
-    
+
     100% {
         transform: rotate(360deg);
     }
@@ -254,6 +266,14 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* -- Prelorder End -- */
+
+
+
+
+
+
+
 
 
 
@@ -274,10 +294,13 @@ header {
     box-shadow: 0 0 18px #00000030;
 }
 
+header .container {
+    position: relative;
+}
+
 header .navbar {
     height: 80px;
     color: var(--textcolor);
-    position: relative;
 }
 
 header .navbar .navbar-brand {
@@ -940,14 +963,15 @@ footer .container .part3 form input {
     padding: 10px;
     background-color: var(--backcolor);
     box-shadow: var(--inbox);
-    border: var(--border);
+    /* border: var(--border); */
+    border: none;
     color: var(--textcolor);
     font-family: var(--nunito);
     border-radius: 8px;
 }
 
-footer .container .part3 form input {
-
+footer .container .part3 form input:active {
+    
 }
 
 footer .container .part3 form button {
@@ -967,6 +991,7 @@ footer .container .part3 form button {
 footer .container .part3 form button:hover {
     box-shadow: var(--inbox);
 }
+
 /* -- Footer End -- */
 
 
@@ -987,12 +1012,11 @@ footer .container .part3 form button:hover {
 
     header .navbar .navbar-collapse {
         box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+        border: var(--border);
         width: 100%;
         position: absolute;
         top: 80px;
-    }
-
-    header .navbar .collapse {
+        left: 0;
     }
 
     .product {
@@ -1024,7 +1048,7 @@ footer .container .part3 form button:hover {
     footer {
         height: 510px;
     }
-    
+
     footer .container .part1 p {
         text-align: center;
     }
@@ -1040,7 +1064,7 @@ footer .container .part3 form button:hover {
     footer {
         height: 667px;
     }
-    
+
     footer .container .part2 {
         margin: 30px 0 0 0;
     }
