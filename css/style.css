@@ -1062,6 +1062,7 @@ footer .container .part3 form button:hover {
     transform: translateY(0);
 }
 
+
 .progress-wrap::after {
     position: absolute;
     font-family: 'unicons';
